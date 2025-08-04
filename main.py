@@ -2,6 +2,7 @@ from flask import Flask, request, send_file, render_template_string
 from lxml import etree
 import xlwt
 import io
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB
 
 app = Flask(__name__)
 
